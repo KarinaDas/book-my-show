@@ -8,7 +8,8 @@ const DefaultHOC = ({ component: Component, ...rest }) => {
     return (
         <>
             <Route 
-                {...rest} component={(props) => (
+                {...rest} 
+                component={(props) => (
                     <DefaultLayout>
                         <Component {...props} />
                     </DefaultLayout>
